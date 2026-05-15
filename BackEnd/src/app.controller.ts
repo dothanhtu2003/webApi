@@ -1,5 +1,6 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from './app.service';
+import { get } from 'http';
 
 @Controller()
 export class AppController {
@@ -14,6 +15,8 @@ export class AppController {
   getSume(@Query('n') n:String ) : number{
     return this.appService.tinhTong(Number(n));
   }
+
+
 
 }
 

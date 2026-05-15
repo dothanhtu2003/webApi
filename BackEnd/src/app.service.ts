@@ -7,7 +7,11 @@ export class AppService {
   }
 
   tinhTong(cmm : number): number{
-    let a = 10;
-    return cmm + 10;
+    let a : number = 10;
+    return cmm + 10 ;
+  }
+
+  getPrintSum() {
+    console.log("may nhin cai choa gi"+ this.tinhTong(10));
   }
 } 
